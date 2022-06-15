@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'first-angular-app';
+  counter: number = 0;
+
+  increase(): void {
+    this.counter++;
+  }
 }
